@@ -1,0 +1,16 @@
+<div class="container">
+  <section class="abstract" id="factor">
+    <article>
+      <%= render_markdown(@factor) %>
+    </article>
+  </section>
+</div>
+
+<section class="concrete">
+  <div class="container">
+    <nav>
+      <div id="prev"><%= render_prev(@factor) %></div>
+      <div id="next"><%= render_next(@factor) %></div>
+    </nav>
+  </div>
+</section>
