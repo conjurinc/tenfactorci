@@ -1,5 +1,4 @@
-The Ten Factors
-==================
+# The Ten Factors
 
 ## [I. Codebase](./codebase)
 ### One codebase tracked in revision control, many deploys

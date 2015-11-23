@@ -1,0 +1,151 @@
+<div class="container">
+  <div id="quiz_progress_bar">
+    <span id="background"></span>
+    <span id="tally"></span>
+  </div>
+  <section class="abstract" id="factor">
+    <div id="quiz">
+      <h2 style="text-align: center">Assessment</h2>
+
+      <h3>Codebase</h3>
+      <ul>
+        <li><label><input type="checkbox" name="q1" value="a">
+          Job config is checked into source control.
+        </label></li>
+        <li><label><input type="checkbox" name="q1" value="b">
+          Job operation is documented.
+        </label></li>
+        <li><label><input type="checkbox" name="q1" value="c">
+          Job config uses one line commands.
+        </label></li>
+      </ul>
+
+      <h3>Dependencies</h3>
+      <ul>
+        <li><label><input type="checkbox" name="q2" value="a">
+          All job dependencies are declared.
+        </label></li>
+        <li><label><input type="checkbox" name="q2" value="b">
+          Dependencies are locked to specific versions.
+        </label></li>
+        <li><label><input type="checkbox" name="q2" value="c">
+          The environments running jobs are immutable.
+        </label></li>
+      </ul>
+
+      <h3>Config</h3>
+      <ul>
+        <li><label><input type="checkbox" name="q3" value="a">
+          Job config does not contain hard-coded files paths.
+        </label></li>
+        <li><label><input type="checkbox" name="q3" value="b">
+          Secrets are externalized.
+        </label></li>
+      </ul>
+
+      <h3>Backing Services</h3>
+      <ul>
+        <li><label><input type="checkbox" name="q4" value="a">
+          Physical location of services is abstracted from the job.
+        </label></li>
+        <li><label><input type="checkbox" name="q4" value="b">
+          Service dependencies are declared explicitly.
+        </label></li>
+      </ul>
+
+      <h3>Build, release, run</h3>
+      <ul>
+        <li><label><input type="checkbox" name="q5" value="a">
+          The job produces a release artifact.
+        </label></li>
+        <li><label><input type="checkbox" name="q5" value="b">
+          Test run data are extracted for human review.
+        </label></li>
+        <li><label><input type="checkbox" name="q5" value="c">
+          There is a version constraint between the code being testing and the job's config.
+        </label></li>
+      </ul>
+
+      <h3>Processes</h3>
+      <ul>
+        <li><label><input type="checkbox" name="q6" value="a">
+          No file system data is written for access by other runs or jobs.
+        </label></li>
+        <li><label><input type="checkbox" name="q6" value="b">
+          The job is portable across different CI nodes.
+        </label></li>
+      </ul>
+
+      <h3>Disposability</h3>
+      <ul>
+        <li><label><input type="checkbox" name="q7" value="a">
+          The job performs resource cleanup on abnormal termination.
+        </label></li>
+      </ul>
+
+      <h3>Dev/prod parity</h3>
+      <ul>
+        <li><label><input type="checkbox" name="q8" value="a">
+          Base environment and dependencies can be provisioned in development.
+        </label></li>
+        <li><label><input type="checkbox" name="q8" value="a">
+          Trusted users have controlled and audited access to secrets.
+        </label></li>
+      </ul>
+
+      <h3>Logs</h3>
+      <ul>
+        <li><label><input type="checkbox" name="q9" value="a">
+          Job logs verbosely to stdout and stderr.
+        </label></li>
+      </ul>
+
+      <h3>Audit</h3>
+      <ul>
+        <li><label><input type="checkbox" name="q10" value="a">
+          A permanent record is kept of each job, parameters, and generated artifacts.
+        </label></li>
+      </ul>
+
+      <hr>
+
+      <button type="button" onclick="scrollToScore()">View your Score</button>
+    </div>
+  </section>
+
+</div>
+
+<script>
+  $(function() {
+    var $tally = $('#tally');
+    var $background = $('#quiz_progress_bar #background');
+    var $questions = $('input');
+
+
+    var backgroundWidth = $background.width();
+    var correct = 0;
+
+    // Initial tally value, no questions correct yet
+    $tally.html('0 / ' + $questions.length);
+
+    // Listen for checkbox events, update correct count
+    $questions.on('change', function(event) {
+      $background.css('background-color', '#009C89');
+      if (event.target.checked) {
+        correct++;
+      }
+      else {
+        correct--;
+      }
+
+      // Update the tally with the new correct count
+      $tally.html(correct + ' / ' + $questions.length);
+      var percent = (correct / $questions.length);
+      $background.width(backgroundWidth * percent);
+    });
+  });
+
+  function scrollToScore() {
+    $("html, body").animate({ scrollTop: 0 }, "fast");
+  }
+</script>

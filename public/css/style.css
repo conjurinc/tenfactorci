@@ -20,12 +20,28 @@ header {
     font-size: 19pt;
     text-align: center;
     box-shadow: 0 2px 12px #888;
+    position: relative;
+}
+
+header a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 header h1 a {
-    color: #FFFFFF;
     display: block;
-    text-decoration: none;
+}
+
+#links {
+    font-size: 16pt;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#links a {
+    margin: 0 30px;
 }
 
 section {
@@ -114,4 +130,34 @@ footer {
 
 footer a {
     color: #999;
+}
+
+#quiz ul {
+    list-style: none;
+}
+
+#quiz_progress_bar {
+    border: 2px solid #ddd;
+    text-align: center;
+    position: relative;
+    background-color: #000;
+}
+
+#quiz_progress_bar {
+    width: 100%;
+    color: white;
+    font-size: 14pt;
+}
+
+#quiz_progress_bar #background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#quiz button {
+    margin: 20px auto;
+    display: block;
 }

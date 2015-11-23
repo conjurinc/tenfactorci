@@ -5,6 +5,10 @@ get '/' do
   erb :home
 end
 
+get '/assessment' do
+  erb :assessment
+end
+
 TOC = %w(codebase dependencies config backing-services build-release-run processes disposability dev-prod-parity logs audit)
 
 get '/:factor' do |factor|
