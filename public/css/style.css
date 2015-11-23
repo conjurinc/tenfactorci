@@ -157,6 +157,11 @@ footer a {
     bottom: 0;
 }
 
+#quiz_progress_bar #tally {
+    position: relative;
+    font-weight: bold;
+}
+
 #quiz button {
     margin: 20px auto;
     display: block;
