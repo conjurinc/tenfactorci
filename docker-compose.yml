@@ -1,6 +1,6 @@
 web:
   build: .
-  command: bundle exec ruby web.rb -o '0.0.0.0' -p 4000
+  command: bundle exec rackup -o '0.0.0.0' -p 4000
   ports:
    - "4000:4000"
   volumes:
