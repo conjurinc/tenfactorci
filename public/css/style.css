@@ -70,14 +70,6 @@ section.concrete h2 {
     font-weight: bold;
     margin-bottom: 0;
 }
-section.concrete h2 a {
-    text-decoration: none;
-    color: #000;
-}
-section.concrete h2 a:hover {
-    border-bottom: 2px dashed #444;
-    color: #337;
-}
 section.concrete h3 {
     color: #333;
     font-weight: normal;
