@@ -5,8 +5,8 @@ get '/' do
   erb :home
 end
 
-get '/assessment' do
-  erb :assessment
+get '/scorecard' do
+  erb :scorecard
 end
 
 TOC = %w(codebase dependencies config backing-services build-release-run processes disposability dev-prod-parity logs audit)
