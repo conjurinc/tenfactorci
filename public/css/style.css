@@ -166,3 +166,12 @@ footer a {
     margin: 20px auto;
     display: block;
 }
+
+.fa-ul {
+    margin-left: 3em;
+}
+
+.fa-ul span {
+    font-size: 16pt;
+    line-height: 32pt;
+}

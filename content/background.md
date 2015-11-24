@@ -19,4 +19,4 @@ to be broken down into distinct services and jobs, each of which:
 * Can be easily linked up to other apps.
 
 From a design standpoint, these characteristics are very similar to a CI pipeline job.
-How can principles from the 12 factor methodology be used to improve our CI system? 
+This guide applies the relevant points of the  12 factor methodology to jobs in a CI pipeline.

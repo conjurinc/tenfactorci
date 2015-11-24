@@ -24,9 +24,21 @@ job starts to fail.
 
 ---
 
-### Rules
-
-1. Base environments and dependencies used by the CI system should be easy for developers to provision and use.
-2. Trusted developers should have access to secrets used by the CI system, in a controlled and audited way.
-3. Manually built artifacts should be valid input for downstream automated jobs.  
-4. The CI system should be built from images that can be pulled and run by developers without the need to setup a complex build environment.
+<ul class="fa-ul">
+    <li>
+        <i class="fa-li fa fa-2x fa-check-square"></i>
+        <span>Base environments and dependencies used by the CI system should be easy for developers to provision and use.</span>
+    </li>
+    <li>
+        <i class="fa-li fa fa-2x fa-check-square"></i>
+        <span>Trusted developers should have access to secrets used by the CI system, in a controlled and audited way.</span>
+    </li>
+    <li>
+        <i class="fa-li fa fa-2x fa-check-square"></i>
+        <span>Manually built artifacts should be valid input for downstream automated jobs.</span>
+    </li>
+    <li>
+        <i class="fa-li fa fa-2x fa-check-square"></i>
+        <span>The CI system should be built from images that can be pulled and run by developers without the need to setup a complex build environment.</span>
+    </li>
+</ul>

@@ -15,8 +15,17 @@ to verify code along different development streams and branches.
 
 ---
 
-### Rules
-
-1. A job should work equally well with local or remote backing services.
-2. The location of backing services should be provided to the job as configuration.
-3. Any secrets needed to connect to a backing service should be provided to the job as configuration.
+<ul class="fa-ul">
+    <li>
+        <i class="fa-li fa fa-2x fa-check-square"></i>
+        <span>A job should work equally well with local or remote backing services.</span>
+    </li>
+    <li>
+        <i class="fa-li fa fa-2x fa-check-square"></i>
+        <span>The location of backing services should be provided to the job as configuration.</span>
+    </li>
+    <li>
+        <i class="fa-li fa fa-2x fa-check-square"></i>
+        <span>Any secrets needed to connect to a backing service should be provided to the job as configuration.</span>
+    </li>
+</ul>

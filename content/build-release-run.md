@@ -12,8 +12,17 @@ Otherwise, it becomes very difficult to re-build historical packages, and to eff
 
 ---
 
-### Rules
-
-1. Create a release artifact for the job code.
-2. Job code should have test cases, and a build and release process of its own.
-3. Maintain version relationships between the product code and the job code.
+<ul class="fa-ul">
+    <li>
+        <i class="fa-li fa fa-2x fa-check-square"></i>
+        <span>Create a release artifact for the job code.</span>
+    </li>
+    <li>
+        <i class="fa-li fa fa-2x fa-check-square"></i>
+        <span>Job code should have test cases, and a build and release process of its own.</span>
+    </li>
+    <li>
+        <i class="fa-li fa fa-2x fa-check-square"></i>
+        <span>Maintain version relationships between the product code and the job code.</span>
+    </li>
+</ul>

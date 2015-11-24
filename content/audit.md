@@ -10,7 +10,13 @@ Audit is used for detailed provenance of artifacts.
 
 ---
 
-### Rules
-
-1. Write CI job metadata to an audit record, not just a log file
-2. Support manual / override workflows in addition to automation
+<ul class="fa-ul">
+    <li>
+        <i class="fa-li fa fa-2x fa-check-square"></i>
+        <span>Write CI job metadata to an audit record, not just a log file.</span>
+    </li>
+    <li>
+        <i class="fa-li fa fa-2x fa-check-square"></i>
+        <span>Support manual / override workflows in addition to automation.</span>
+    </li>
+</ul>
