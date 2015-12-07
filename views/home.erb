@@ -7,8 +7,15 @@
   </div>
 </section>
 
-<section class="concrete">
+<section class="concrete" style="background: #fff;">
   <div class="container">
-    <article id="factors"><%= render_markdown('toc') %></article>
+    <h1 id="factors">The Ten Factors</h1>
+
+    <% @factors.each do |factor| %>
+        <hr style="border-top: 5px solid">
+        <article id="<%= factor %>">
+          <%= render_markdown(factor) %>
+        </article>
+    <% end %>
   </div>
 </section>

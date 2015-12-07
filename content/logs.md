@@ -1,4 +1,4 @@
-## IX. Logs
+## [IX. Logs](#logs)
 
 ### Treat logs as event streams
 

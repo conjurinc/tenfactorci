@@ -1,25 +1,18 @@
 require 'sinatra'
 require 'rdiscount'
 
-TOC = %w(codebase dependencies config backing-services build-release-run processes disposability dev-prod-parity logs audit)
+FACTORS = %w(
+  codebase dependencies config backing-services build-release-run
+  processes disposability dev-prod-parity logs audit
+)
 
 get '/' do
+  @factors = FACTORS
   erb :home
-end
-
-get '/one-page' do
-  @factors = TOC
-  erb :onepage
 end
 
 get '/scorecard' do
   erb :scorecard
-end
-
-get '/:factor' do |factor|
-  halt 404 unless TOC.include?(factor)
-  @factor = factor
-  erb :factor
 end
 
 helpers do
@@ -27,18 +20,6 @@ helpers do
     RDiscount.new(File.read("content/#{file}.md")).to_html
   rescue Errno::ENOENT
     puts "No content for #{file}, skipping"
-  end
-
-  def render_prev(factor)
-    idx = TOC.index(factor)
-    return if idx == 0
-    "<a href=\"./#{TOC[idx-1]}\">&laquo; Previous</a>"
-  end
-
-  def render_next(factor)
-    idx = TOC.index(factor)
-    return if idx == TOC.size-1
-    "<a href=\"./#{TOC[idx+1]}\">Next &raquo;</a>"
   end
 end
 

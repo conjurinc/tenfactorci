@@ -1,4 +1,4 @@
-## V. Build, Release, Run
+## [V. Build, Release, Run](#build-release-run)
 
 ### Strictly separate build and run stages
 

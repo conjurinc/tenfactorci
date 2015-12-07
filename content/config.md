@@ -1,4 +1,4 @@
-## III. Config
+## [III. Config](#config)
 
 ### Store config in the environment
 

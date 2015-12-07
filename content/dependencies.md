@@ -1,4 +1,4 @@
-## II. Dependencies
+## [II. Dependencies](#dependencies)
 
 ### Explicitly declare and isolate dependencies
 

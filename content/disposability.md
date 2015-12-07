@@ -1,4 +1,4 @@
-## VII. Disposability
+## [VII. Disposability](#disposability)
 
 ### Maximize robustness with fast startup and graceful shutdown
 

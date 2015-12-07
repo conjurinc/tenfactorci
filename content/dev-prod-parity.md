@@ -1,4 +1,4 @@
-## VIII. Dev/Prod parity
+## [VIII. Dev/Prod parity](#dev-prod-parity)
 
 ### Keep development, staging, and production as similar as possible
 
