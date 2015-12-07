@@ -1,5 +1,3 @@
-## [VII. Disposability](#disposability)
-
 ### Maximize robustness with fast startup and graceful shutdown
 
 Jobs can sometimes take a long time to run. Track how long jobs take to run so you can take action when new changes

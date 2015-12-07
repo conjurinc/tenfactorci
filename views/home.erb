@@ -7,14 +7,25 @@
   </div>
 </section>
 
-<section class="concrete" style="background: #fff;">
+<section class="concrete" style="background: #fff; padding-bottom: 0">
   <div class="container">
     <h1 id="factors">The Ten Factors</h1>
 
-    <% @factors.each do |factor| %>
-        <hr style="border-top: 5px solid">
-        <article id="<%= factor %>">
-          <%= render_markdown(factor) %>
+    <article id="toc"><%= render_markdown('toc') %></article>
+  </div>
+</section>
+<section class="concrete" style="background: #fff;">
+  <div class="container">
+
+    <% @factors.each_with_index do |factor, i| %>
+      <% if i > 0 %><hr style="border-top: 5px solid"/><% end %>
+        <article id="<%= slugify(factor) %>" class="factor">
+          <h2>
+            <a href="#<%= slugify(factor) %>">
+              <%= "#{romanize(i + 1)}. #{factor}" %>
+            </a>
+          </h2>
+          <%= render_markdown(slugify(factor)) %>
         </article>
     <% end %>
   </div>

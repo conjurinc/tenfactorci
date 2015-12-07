@@ -1,5 +1,3 @@
-## [IX. Logs](#logs)
-
 ### Treat logs as event streams
 
 Robust log capture is pretty well handled by standard CI systems. 

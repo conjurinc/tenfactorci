@@ -1,5 +1,3 @@
-## [VIII. Dev/Prod parity](#dev-prod-parity)
-
 ### Keep development, staging, and production as similar as possible
 
 This is very important for CI, and very often overlooked. 

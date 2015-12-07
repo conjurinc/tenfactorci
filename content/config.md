@@ -1,5 +1,3 @@
-## [III. Config](#config)
-
 ### Store config in the environment
 
 Externalize the configuration of the job to the environment. This makes the job maximally flexible, it ensures 

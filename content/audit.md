@@ -1,5 +1,3 @@
-## [X. Audit](#audit)
-
 ### Build steps and artifacts written to an audit system independent of any single CI component
 
 The audit is the definitive record of the CI process.

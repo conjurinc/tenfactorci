@@ -68,7 +68,6 @@ section.concrete h2 {
     font-size: 19pt;
     margin-top: 12pt;
     font-weight: bold;
-    margin-bottom: 0;
 }
 section.concrete h3 {
     color: #333;
@@ -166,4 +165,16 @@ footer a {
 .fa-ul span {
     font-size: 16pt;
     line-height: 32pt;
+}
+
+@media (min-width: 550px) {
+    .two-pt-4.columns {
+        width: 16.6666666666%;
+    }
+}
+
+@media (max-width: 550px) {
+    .factor img {
+        width: 100%;
+    }
 }

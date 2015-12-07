@@ -1,5 +1,3 @@
-## [V. Build, Release, Run](#build-release-run)
-
 ### Strictly separate build and run stages
 
 The jobs that make up the CI system are software. Therefore, they should be coded, tested, packaged, and released. 

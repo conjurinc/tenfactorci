@@ -1,5 +1,3 @@
-## [IV. Backing Services](#backing-services)
-
 ### Treat backing services as attached resources
 
 Build jobs may depend on backing services such as a database, message queue, or caching service. 

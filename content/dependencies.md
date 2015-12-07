@@ -1,5 +1,3 @@
-## [II. Dependencies](#dependencies)
-
 ### Explicitly declare and isolate dependencies
 
 Ah yes. Dependencies. CI jobs have all kinds of dependencies:

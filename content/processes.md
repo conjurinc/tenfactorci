@@ -1,5 +1,3 @@
-## [VI. Processes](#processes)
-
 ### Execute the app as one or more stateless processes
 
 Stateful CI jobs are a big problem. 
