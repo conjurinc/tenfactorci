@@ -2,7 +2,7 @@
 
 The contributors to this document have been involved in the creation and maintenance of many continuous integration 
 pipelines and their associated jobs, including our work on the build and release system at 
-[Conjur](https://www.conjur.net/).
+[Conjur](https://www.conjur.net/10factorci).
 
 This document synthesizes all of our experience and observations on a wide variety of approaches to enabling
 continuous integration at organizations with wildly different needs and compositions. Our focus is on the
