@@ -1,15 +1,20 @@
 require 'sinatra'
 require 'rdiscount'
 
+TOC = %w(codebase dependencies config backing-services build-release-run processes disposability dev-prod-parity logs audit)
+
 get '/' do
   erb :home
+end
+
+get '/one-page' do
+  @factors = TOC
+  erb :onepage
 end
 
 get '/scorecard' do
   erb :scorecard
 end
-
-TOC = %w(codebase dependencies config backing-services build-release-run processes disposability dev-prod-parity logs audit)
 
 get '/:factor' do |factor|
   halt 404 unless TOC.include?(factor)
