@@ -28,9 +28,14 @@ Containers are great for build jobs because:
 2. The image is locked with a specific version (SHA). It’s guaranteed to work just the same in the future as it does today.
 
 Just keep in mind, container technology *is not* a panacea. 
-For example, you can’t containerize your Windows and OS X build jobs. When you can't use a container, 
-fall back on a traditional virtualized image. If you can't do that either, manage the build machine as 
-strictly as you can using configuration management tools. 
+For example, you can’t containerize your Windows and OS X build jobs (yet). 
+When you can't use a container, fall back on a traditional virtualized image. 
+If you can't do that either, manage the build machine as strictly as you can using configuration management tools.
+
+Sometimes dependencies cannot be locked to a specific version. For example, when you are a writing a library. If you
+pin your dependencies to specific versions, you are forcing the library's user to also use that dependency. This is
+often not desirable or possible. In this case, pin the major version of the project and run your library's tests on
+a schedule to ensure that updated dependencies do not break functionality.
 
 ---
 
