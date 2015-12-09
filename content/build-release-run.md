@@ -1,5 +1,7 @@
 ### Strictly separate build and run stages
 
+Testing is an integral part of building, releasing and running software. 
+
 The jobs that make up the CI system are software. Therefore, they should be coded, tested, packaged, and released. 
 In addition, job code must be meaningfully versioned, because the requirements of the product being built change 
 over time. 
