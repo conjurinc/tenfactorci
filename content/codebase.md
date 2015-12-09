@@ -22,6 +22,12 @@ them independently.
 
 Test code should be versioned alongside the code it is testing.
 
+Job configuration should also be tracked in source control. Committing to a repository on job config change is good;
+defining the jobs as code is better
+<sup><a href="#codebase-1">1</a></sup>.
+Setting up job configurations by hand in user interfaces is error-prone and a history of changes is 
+important for rebuilding past artifacts.
+
 ---
 
 <ul class="fa-ul">
@@ -38,3 +44,11 @@ Test code should be versioned alongside the code it is testing.
         <span>Store the job configuration in a source code repository.</span>
     </li>
 </ul>
+
+<div id="codebase-1">
+    <small>
+        1. For example if you're using Jenkins, use the 
+        <a href="https://github.com/jenkinsci/job-dsl-plugin/wiki">Job DSL Plugin</a> 
+        or a project like <a href="https://github.com/groupon/DotCi">DotCI</a> to define your jobs.
+    </small>
+</div>
