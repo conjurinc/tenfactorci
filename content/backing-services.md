@@ -11,6 +11,10 @@ Then, for acceptance testing, services will have dependencies on other upstream 
 If your services have hard-coded assumptions about the location of upstream services, it makes it very hard 
 to verify code along different development streams and branches.
 
+Mocking out calls to backend services is an option to be considered carefully. Mocking is fine for unit tests, but then
+smoke tests should also be run to ensure the real backend behaves as expected. The above guidelines apply for smoke
+tests.
+
 ---
 
 <ul class="fa-ul">
