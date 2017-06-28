@@ -5,7 +5,7 @@ It’s very common for a job to rely on some specific filesystem configuration
 or for a sequence of jobs to use a common filesystem to pass information down the pipeline.
 
 Not only are stateful jobs fragile, they are also not scalable. When build jobs are written with the 
-assumption that the are operating on a shared filesystem, it’s impossible to scale the CI system out across a 
+assumption that they are operating on a shared filesystem, it’s impossible to scale the CI system out across a 
 pool of worker machines. 
 
 In practice, this means that the CI server becomes more and more stressed until a 
